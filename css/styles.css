@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.header__hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchIcon Img{
+    width: 30px;
+    height: 30px;
+}
+#account {
+    margin-right: 10%;
+    text-decoration: none;
+    color: #8d8d8d;
+    font-size: medium;
+    list-style: none;
+}
+
+a.loggedInUser {
+    display: contents;
+    text-decoration: none;
+    font-size: large;
+    color: #8d8d8d;
+}
+
+h4.subHeading{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+p.inventoryParagraph{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mainNav {
+    display: flex;
+    background-color: #3a3a3a;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+li.classList {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.classList a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.classList:hover {
+    background-color: #4c96d7;
+}
+
+.classList:hover a {
+    color: black;
+}
+
+h1 {
+    color: #000028;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #3a3a3a;
+    text-align: left;
+    font-size: small;
+    margin-left: 1%;
+}
+
+p.updatePage{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.footParagraph {
+    color: #3a3a3a;
+    text-align: center;
+    font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+hr {
+    border: 2px solid #3a3a3a;
+    width: 99.6%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select#classificationId {
+    width: 50%;
+    margin-bottom: 10px;
+}
+p.paraBold {
+    color: #3a3a3a;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+/* Login form */
+.formPage {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.formButton {
+    margin-left: 0%;
+}
+
+p.formParagraph {
+    font-size: medium;
+    color: black;
+}
+
+.showPasswordBtn {
+    margin-top: 0%;
+    margin-left: 0%;
+    color: white;
+    background-color: #3a3a3a;
+}
+span.li {
+    display: list-item;
+    margin-left: 2em
+}
+
+#inv-display {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul#inv-display li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+    align-items: initial;
+    height: initial;
+}
+
+#inv-display li img {
+    max-width: 100%;
+}
+
+#image-display {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#image-display img{
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.displayView{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.thunbnailsImg{
+    display: flex;
+}
+
+.thunbnailsImg img{
+    width: 40%;
+    margin-top: 20px;
+}
+
+.vehicleImg img{
+    width: 100%;
+}
+
+.searchDisplayItem {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.pagination {
+    /* make page numbers align to the center and style it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #3a3a3a;
+    font-size: larger;
+}
+/* Large Screen Responsive Code */
+
+@media screen and (min-width: 768px) {
+    html {
+        background-image: url(/phpmotors/images/site/small_check.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    body {
+        width: 80%;
+        margin: auto;
+        border: 5px solid #4c96d7;
+        background-color: #fff;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    /* Header */
+    .header__hero {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #account {
+        margin-right: 10%;
+        text-decoration: none;
+        color: #8d8d8d;
+    }
+
+    a#loggedInUser {
+        display: contents;
+        text-decoration: none;
+        color: #8d8d8d;
+    }
+
+    /* Navbar */
+    .mainNav {
+        display: flex;
+        background-color: #3a3a3a;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .classList {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    #inv-display {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	#inv-display h2{
+		font-size: 1rem;
+	}
+
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+      
+	#inv-display div {
+		width: 100%;
+	}
+
+    div.details p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .classList a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mainNav li:hover {
+        background-color: #4c96d7;
+    }
+
+    .mainNav li:hover a {
+        color: black;
+    }
+
+    input#priYes.pImage{
+        width: 1%;
+    }
+
+    input#priNo.pImage{
+        width: 1%;
+    }
+
+    #image-display{ 
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .thunbnailsImg {
+        display: grid;
+    }
+
+    .displayView{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .thunbnailsImg img:hover {
+        transform: scale(1.5);
+    }
+
+    .vehicleImg img{
+        object-fit: cover;
+        width: 150%;
+        margin-left: 5%;
+    }
+
+    .thunbnailsImg img {
+        width: 100%;
+    }
+    .searchDisplayItem{
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+    .pagination{
+        /* make page numbers align to the center and style it */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        color: #3a3a3a;
+        font-size: larger;
+    }
+    /* Header */
+    h1 {
+        color: #000028;
+        margin-top: 20px;
+    }
+
+    /* Footer */
+    .footParagraph {
+        color: #3a3a3a;
+        text-align: center;
+        font-size: small;
+    }
+
+    hr {
+        border: 2px solid #3a3a3a;
+        width: 99.6%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* vehicle Details */
+    /*img{
+        max-width: 100%;
+    }*/
+    section.vehicleDetails {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.details{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5%
+    }
+}
+
+/* Home Page */
+.home__container h1{
+    font-size: 135%;
+}
+
+.landing_page h2 {
+    justify-items: left;
+    color: #4c96d7;
+    font-size: 19px;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.landing_page h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 10px;
+    justify-items: left;
+    color: #4c96d7;
+}
+
+.home__container img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #4c96d7;
+    color: #000028;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Upgrades column */
+.Upgrade__column {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Upgrade__column h2 {
+    grid-area: 1/1/2/3;
+}
+
+.Upgrade__column >div {
+    text-align: center;
+}
+
+.Upgrade__img {
+    background-color: #4c96d7;
+    height: 80px;
+    border-color: #000028;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Upgrade__column img {
+    margin: 10px;
+    width: 70px;
+    height: 60px;
+}
+
+
+/* Large screen of home page */
+@media screen and (min-width: 768px) {
+    .review__column {
+        grid-area: review;
+        margin-left: 20%;
+    }
+    
+    .Upgrade__column {
+        grid-area: upgrade;
+        margin-left: 10%;
+    }
+    .home__columns{
+        display: grid;
+        grid-template-areas: "upgrade review";
+        
+    }
+
+    .landing_page{
+        margin-left: 2%;
+        margin-top: 0%;
+        position: absolute;
+    }
+
+    #ownToday_Btn{
+        margin-left: 3%;
+        display: block;
+        margin-top: -31%;
+        z-index: 1;
+        position: absolute;
+    }
+}
